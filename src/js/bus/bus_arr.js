@@ -290,15 +290,8 @@ var app = Vue.createApp({
 
     computed: {
         get_bus_stops() {
-            let api_endpoint_url1 = 'http://datamall2.mytransport.sg/ltaodataservice/BusStops'
-            axios.get(api_endpoint_url1, {
-                    headers: {
-                        'AccountKey': 'rA62Al3wSpWoBqzOBOIC6g==',
-                        'accept': 'application/json',
-                    }
-                })
-//             let api_endpoint_url1 = '../../src/php/bus/bus_stops.php'
-//             axios.get(api_endpoint_url1)
+            let api_endpoint_url1 = '../../src/php/bus/bus_stops.php'
+            axios.get(api_endpoint_url1)
                 .then(response => {
                 console.log(response)
                     var response = response.data
