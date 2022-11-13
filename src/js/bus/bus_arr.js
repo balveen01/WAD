@@ -293,6 +293,7 @@ var app = Vue.createApp({
             let api_endpoint_url1 = '../../src/php/bus/bus_stops.php'
             axios.get(api_endpoint_url1)
                 .then(response => {
+                console.log(response)
                     var response = response.data
                     for (res of response) {
                         var block = res.value
